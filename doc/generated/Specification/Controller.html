@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Specification\Controller | Specification API library</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Specification_Controller" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Specification API library</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../Specification.html">Specification</a></li>
+    
+                <li>Controller</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Controller</h1>
+    </div>
+
+    <p>    class
+    <strong>Controller</strong>
+</p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($loaders = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFromClassesArray">loadFromClassesArray</a>($classes)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFromNamespacesPrefix">loadFromNamespacesPrefix</a>($namespaces)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseClass">parseClass</a>($class)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSpecifications">getSpecifications</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServiceSpecificationMap">getServiceSpecificationMap</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseSchema">parseSchema</a>($title, $schema, $specification)
+                                            <p>Parse schema - populate with default values if they are not specified.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decodeDataWithSchemaArray">decodeDataWithSchemaArray</a>($data, $schema)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_decodeDataWithSchemaFile">decodeDataWithSchemaFile</a>($data, $path)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateDataWithSchemaFile">validateDataWithSchemaFile</a>($data, $path)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateDataWithSchemaArray">validateDataWithSchemaArray</a>($data, $schema)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 17</div>
+        <code>                    
+    <strong>__construct</strong>($loaders = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$loaders</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFromClassesArray">
+        <div class="location">at line 27</div>
+        <code>                    
+    <strong>loadFromClassesArray</strong>($classes)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$classes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFromNamespacesPrefix">
+        <div class="location">at line 36</div>
+        <code>                    
+    <strong>loadFromNamespacesPrefix</strong>($namespaces)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$namespaces</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseClass">
+        <div class="location">at line 47</div>
+        <code>                    
+    <strong>parseClass</strong>($class)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$class</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SPEC_UNAVAILABLE">SpecificationException::SPEC_UNAVAILABLE</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SPEC_REQUIRED">SpecificationException::SPEC_REQUIRED</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SPEC_INVALID">SpecificationException::SPEC_INVALID</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::PROPERTY_SPEC_MISSING">SpecificationException::PROPERTY_SPEC_MISSING</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSpecifications">
+        <div class="location">at line 87</div>
+        <code>                    
+    <strong>getSpecifications</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServiceSpecificationMap">
+        <div class="location">at line 92</div>
+        <code>                    
+    <strong>getServiceSpecificationMap</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseSchema">
+        <div class="location">at line 107</div>
+        <code>                    
+    <strong>parseSchema</strong>($title, $schema, $specification)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Parse schema - populate with default values if they are not specified.</p>                    <p><ul>
+<li>$schema</li>
+<li>title</li>
+<li>description</li>
+<li>type</li>
+<li>properties</li>
+<li>required</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$title</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$schema</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$specification</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decodeDataWithSchemaArray">
+        <div class="location">at line 136</div>
+        <code>                    
+    <strong>decodeDataWithSchemaArray</strong>($data, $schema)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$schema</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_ERROR">SpecificationException::SCHEMA_ERROR</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decodeDataWithSchemaFile">
+        <div class="location">at line 181</div>
+        <code>                    
+    <strong>decodeDataWithSchemaFile</strong>($data, $path)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_MISSING">SpecificationException::SCHEMA_MISSING</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_ERROR">SpecificationException::SCHEMA_ERROR</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateDataWithSchemaFile">
+        <div class="location">at line 200</div>
+        <code>                    
+    <strong>validateDataWithSchemaFile</strong>($data, $path)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_MISSING">SpecificationException::SCHEMA_MISSING</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_ERROR">SpecificationException::SCHEMA_ERROR</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_VIOLATION">SpecificationException::SCHEMA_VIOLATION</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateDataWithSchemaArray">
+        <div class="location">at line 220</div>
+        <code>                    
+    <strong>validateDataWithSchemaArray</strong>($data, $schema)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$schema</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_MISSING">SpecificationException::SCHEMA_MISSING</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_ERROR">SpecificationException::SCHEMA_ERROR</abbr></td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Specification\SpecificationException::SCHEMA_VIOLATION">SpecificationException::SCHEMA_VIOLATION</abbr></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
